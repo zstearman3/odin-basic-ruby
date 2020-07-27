@@ -2,7 +2,7 @@ my_dictionary = ["below","down","go","going","horn","how","howdy","it","i","low"
 
 def substring(str, dict)
   hash_count = {}
-  for word in dict
+  dict.each do |word|
     count = check_substring(str.downcase, word)
     hash_count[word] = count if count > 0
   end
